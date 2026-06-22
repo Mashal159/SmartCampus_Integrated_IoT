@@ -2,6 +2,11 @@
 
 ESP32 FreeRTOS firmware for the embedded-systems part of a Smart Campus graduation project.
 
+## Repository Layout
+
+- `SmartCampus_Integrated_IoT/` - main ESP32 Arduino FreeRTOS firmware
+- `Function_Tests/` - separated ESP32 sketches for testing each subsystem individually
+
 ## Main Features
 
 - Smart gate control using servo motor and ultrasonic detection
@@ -14,10 +19,11 @@ ESP32 FreeRTOS firmware for the embedded-systems part of a Smart Campus graduati
 
 ## Setup
 
-1. Copy `config.example.h` to `config.h`.
-2. Put your real Wi-Fi credentials in `config.h`.
-3. Open `SmartCampus_Integrated_IoT.ino` in Arduino IDE.
-4. Select the ESP32 board and upload.
+1. Open the `SmartCampus_Integrated_IoT/` folder.
+2. Copy `config.example.h` to `config.h`.
+3. Put your real Wi-Fi credentials in `config.h`.
+4. Open `SmartCampus_Integrated_IoT/SmartCampus_Integrated_IoT.ino` in Arduino IDE.
+5. Select the ESP32 board and upload.
 
 `config.h` is intentionally ignored by Git because it contains private Wi-Fi credentials.
 
@@ -36,4 +42,3 @@ ESP32 FreeRTOS firmware for the embedded-systems part of a Smart Campus graduati
 | Lighting ultrasonic 1 TRIG/ECHO | 13 / 14 |
 | Lighting ultrasonic 2 TRIG/ECHO | 32 / 33 |
 | Lighting LDR / LED output | 36 / 2 |
-
