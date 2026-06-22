@@ -1,0 +1,12 @@
+config.h
+*.tmp
+*.tmp.*
+*.log
+*.docx
+*.zip
+.arduino-cli/
+tools/arduino-cli/
+tools/report_assets/*_docx.jpg
+__pycache__/
+append_timing_analysis_report.py
+update_report_component_images.py
